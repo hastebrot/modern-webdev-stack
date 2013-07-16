@@ -19,13 +19,13 @@
 ```html
 <div id="container">
   <header>
-     <h1>Sample HTML5 Structure</h1>
-     <nav>
-       <ul>
-         <li><a href="#">Home</a></li>
-         <li><a href="#">About</a></li>
-       </ul>
-     </nav>
+    <h1>Sample HTML5 Structure</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
   </header>
   <section>
     <hgroup>
@@ -98,4 +98,31 @@ a:focus {
 .table-hover tbody tr:hover > th {
   background-color: #f5f5f5;
 }
+```
+
+## javascript (programming language)
+
+```
+function Apple(type) {
+  this.type = type;
+  this.color = "red";
+  this.toString = function() {
+      return this.color + " " + this.type + " apple";
+  };
+}
+
+var apple = new Apple("macintosh");
+apple.color = "reddish";
+alert(apple.toString());
+```
+
+```javascript
+(function () {
+	// ... all vars and functions are in this scope only
+	// still maintains access to all globals
+}());
+
+var module = (function (window, document, $) {
+  // module stuff
+})(window, document, jQuery);
 ```
