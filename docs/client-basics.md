@@ -102,7 +102,13 @@ a:focus {
 
 ## javascript (programming language)
 
+```html
+<script type="text/javascript">
+  document.write("<b>Hello World</b>");
+</script>
 ```
+
+```javascript
 function Apple(type) {
   this.type = type;
   this.color = "red";
